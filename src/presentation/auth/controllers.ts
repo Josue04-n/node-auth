@@ -23,8 +23,6 @@ export class AuthControllers {
 
     }
 
-    //Definir tus controladores aquí
-
     registerUser =  (req: Request, res: Response) =>{
        
         const [error, registerUserDto] = RegisterUserDto.create(req.body);
@@ -51,7 +49,6 @@ export class AuthControllers {
         UserModel.find()
          .then(users => {
             res.json({
-                //users, 
                 user: req.body.user
             })
         })
