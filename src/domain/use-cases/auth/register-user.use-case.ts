@@ -14,10 +14,10 @@ interface UserToken {
 
 type SignToken = (payload: Object,duration?: string) => Promise<string | null>;
 
-
 interface RegisterUserUseCase {
 
     excute (registerUserDto: RegisterUserDto): Promise<UserToken>;
+    
 }
 
 export class RegisterUser implements RegisterUserUseCase {
