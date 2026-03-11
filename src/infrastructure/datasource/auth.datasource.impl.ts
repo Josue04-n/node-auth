@@ -70,8 +70,6 @@ export class AuthDataSourceImpl implements AuthDataSource {
 
             return UserMapper.userEntityFromObject(user);
 
-
-
         } catch (error) {
             if (error instanceof CustomError) {
                 throw error;
