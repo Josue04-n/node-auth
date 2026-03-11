@@ -7,7 +7,6 @@ interface Options {
 
 export class MongoDatabase {
 
-
     static async connect(options:Options){
 
         const {dbName, mongoUrl} = options;

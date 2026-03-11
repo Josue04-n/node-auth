@@ -12,7 +12,6 @@ export class UserMapper {
         if (!email) throw CustomError.badRequest("Missing email");
         if (!password) throw CustomError.badRequest("Missing password");
         if (!roles) throw CustomError.badRequest("Missing roles");
-
         
         //Mapper
         return new UserEntity (
